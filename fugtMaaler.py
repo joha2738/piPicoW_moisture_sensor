@@ -104,35 +104,29 @@ def webpage():
             <html>
             <head>
                 <title>Vandforhold i planter</title>
-                
+                <meta http-equiv="refresh" content="30">
             </head>
             <center><b>
                 <form action="./alle">
                     <input type="submit" value="Lys i alle" style="height:120px; width:120px; color:black" />
                 </form>
-            <table><tr>
-            
+            <table><tr>      
                 <td><form action="./plante1">
                     <input type="submit" value="Plante 1" style="height:40px; width:120px; color:red" />
                 </form></td>
-                
                 <td><form action="./plante2">
                     <input type="submit" value="Plante 2" style="height:40px; width:120px; color:green" />
                 </form></td>
-                
                 <td><form action="./plante3">
                     <input type="submit" value="Plante 3" style="height:40px; width:120px; color:blue" />
                 </form></td>
-                
                 <td><form action="./plante4">
                     <input type="submit" value="Plante 4" style="height:40px; width:120px; color:fuchsia" />
                 </form></td>
-                
             </tr></table>
             
             <h1>Moisture Sensor</h1>
             <p>Percentage: """ + read_moisture() + """%</p>
-            <meta http-equiv="refresh" content="10">
             </body>
             </html>
             """#.format(read_moisture())
